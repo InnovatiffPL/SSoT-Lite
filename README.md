@@ -1,6 +1,8 @@
 # SSoT-Lite
 
-Niniejszy projekt jest wciąż rozwijającą się wersją MVP dla Startupu, którego założeniem jest zarządzanie operacyjne i tworzenie rozwiązań dla firm micro-SMB, oraz budowanie sieci ekspertów, służących jako przedłużenie kompetencji firmy. W fazie MVP postawiłem na uproszczoną architekturę SSoT, która posiada znaczne ograniczenia technologiczne. Dokument ten stanowi zarys i schemat SSoT.
+Niniejsza dokumentacja dotyczy wdrożenia Fundamentalnego Systemu Orkiestracji (FSO) Coretex Hub — Minimalnie Satysfakcjonującego Produktu (MVP). FSO ma na celu transformację zarządzania operacyjnego w sektorze micro-SMB poprzez sieć zweryfikowanych Ekspertów, służących jako rozszerzenie wewnętrznych kompetencji firm.
+
+Charakterystyka MVP: Projekt koncentruje się na walidacji modelu Value-Based Pricing (VBP) i pomiaru wartości (Time Savings ROI - TS-ROI). W fazie tej, architektura FSO opiera się na rygorze proceduralnym Single Source of Truth (SSoT), strategicznie neutralizując ograniczenia technologiczne narzędzi i skupiając się na funkcjonalnościach krytycznych dla pomiaru wartości. Dokument ten stanowi zarys i schemat wdrożonej architektury SSoT.
 
 Jak to działa?
 
