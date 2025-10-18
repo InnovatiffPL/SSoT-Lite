@@ -65,3 +65,29 @@ Postawiłem na 4 filary projektu:
 Po agregacji danych ze wstępnej konsultacji do systemu CRM, ekspert akceptuje projekt, co przypisuje te dane w Jira. Następnie po zebraniu dokumentacji projekt się odblokowuje i ekspert nad nim pracuje. Do komunikacji na linii klient-firma-ekspert służy prosty system helpdesk zintegrowany z Trello, które jest również zintegrowane z Jira. Po zakończeniu projektu wszystkie dane z Jira (w tym metryka definiująca koszt i wartość projektu) są importowane spowrotem do Trello, po czym projekt się usuwa; kluczowe dane natomiast zostają.
 
 Następne kroki to stworzyć system vettingu i credentialingu ekspertów oraz walidacji projektowej klienta. Stworzę jeszcze Agenta AI, który przeczyta dokumenty i zweryfikuje je z protokołami. Dodatkowo zautomatyzuje statusy projektowe i zarządzi dostępami.
+
+Przepływ pracy:
+
+Przepływ pracy procesu od konsultacji po finalizację projektu:
+
+Platforma rozróżnia trzy typy użytkowników:
+
+Admin: Zarządza projektem i może nanosić modyfikacje, lub blokować procesy.
+Ekspert: Zarządza projektem z poziomu Jira, dokumentuje, aktualizuje i realizuje go.
+Klient: Dostarcza kluczowych danych o projekcie.
+
+Każdy ekspert jest uprzednio weryfikowany dzięki procesowi vettingu; zdobywa się dokumentację niezbędną do weryfikacji działalności (np. numer KRS), portfolio (jeśli możliwe), sprawozdanie w formie dokumentu, formularz zgłoszeniowy, rozmowa weryfikacyjna. Dopiero zbiór tych danych jest odpowiednio filtrowany przez Agenta AI, który podejmuje decyzję o dołączeniu lub wykluczeniu eksperta z dalszego procesu.
+
+Jeśli ekspert przechodzi ten etap pozytywnie, generuje się jego profil w systemie CRM i zakłada osobnego maila/konto dla Jira. Na tym etapie ekspert nie ma jeszcze dostępu do konta.
+
+Po krótkiej konsultacji wstępnej z klientem szacuje się złożoność i cenę za projekt, na podstawie której uzupełniane są kluczowe dane dotyczące złożoności i wyceny projektu. Dane te są agregowane do systemu CRM, tworząc profil klienta i generuje się rekord w Trello (z pełną specyfikacją projektu) - na tym etapie kompletuje się potrzebną dokumentację od klienta zarówno jak i ustala plan działań. Wszelkie metryki i dane są uzupełniane, a następnie system tworzy kartę projektu, która jest porównywana z istniejącą siecią ekspertów przez Agenta AI i następuje proces credentialingu.
+
+Każdy dopasowany ekspert dostaje powiadomienie o dostępnym projekcie, posiadając wstępne informacje o projekcie. Pierwszy klient, który zaakceptuje wstępnie projekt zostaje do niego przypisany. Na tym etapie Agent ustala szczegóły wyceny i projektu z ekspertem, briefuje go do schematu pracy i szczegółów projektu, po czym otwiera się projekt w Jira (za pomocą automatyzacji z Trello) i nadaje dostęp ekspertowi.
+
+Kluczowym elementem w aktywnej fazie projektu jest możliwość kontaktu ze strony klienta i eksperta przez zintegrowany system helpdesk, co służy jako medium komunikacyjne na linii klient-firma, ekspert-firma. To spełnia warunek pełnej kontroli i odpowiedzialności za projekt przez Coretex; w tym jakość komunikacji między stronami.
+
+Ekspert pracuje na zadaniach, do których można tworzyć zadania podrzędne (główne zadanie to tylko pełna specyfikacja projektu i orientacja co należy wykonać), dopiero te zadania podrzędne definiują odrębne prace jakie wykona ekspert. Do każdego zadania należy załączyć dokumentację potwierdzającą wykonanie, w tym czasie kalkuluje się czas pracy eksperta na każdym zadaniu i zadaniu nadrzędnym - co później jest wykorzystane do kalkulacji TS-ROI.
+
+Gdy ekspert zakończy pracę na projekcie, aktualizuje jego status w Jira, po czym eksportuje pełne metadane z projektu i załącza w komentarzu na głównym zadaniu. Ten dokument jest później agregowany do rekordu w Trello, po czym projekt w Jira się usuwa. Następnie tworzy się dedykowane portfolio w osobnym systemie dla eksperta w oparciu o te wyeksportowane dane z projektu.
+
+Wszelkie dane i dokumentacja są pierw wpisywane do Trello, a po zakończeniu projektu bądź w razie nanoszenia istotnych poprawek - aktualizowane. Stanowi to główny punkt odniesienia integracji i kontroli nad danymi i procesem. Każde zadanie z Jira może być bezpośrednio kontrolowane i modyfikowane z poziomu Trello, wszystkie dokumenty wraz z informacjami są przechowywane na rekordzie projektowym (karcie), komunikacja odbywa się również przez zintegrowany helpdesk w Trello w czasie rzeczywistym; w tym obsługa e-maili.
