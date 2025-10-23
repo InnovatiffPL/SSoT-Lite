@@ -1,7 +1,3 @@
-Oto poprawiona, ostateczna wersja README.md z uwzględnieniem nowych faktów dotyczących credentialingu, roli Trello jako repozytorium umów, funkcji agentów AI oraz sposobu działania Obsidiana i mechanizmów zabezpieczających integralność systemu.
-
-***
-
 # SSoT‑Lite  
 Fundamentalny System Orkiestracji (FSO) – Coretex Hub MVP  
 
