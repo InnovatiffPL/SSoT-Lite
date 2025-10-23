@@ -1,3 +1,5 @@
+Ten dokument ma charakter poglądowy i nie zawiera szczegółów technicznych związanych z Coretex IP, agentami AI ani kodem źródłowym platformy.
+
 # SSoT‑Lite  
 Fundamentalny System Orkiestracji (FSO) – Coretex Hub MVP  
 
@@ -60,3 +62,4 @@ System jest skalowalny pionowo (zwiększanie liczby projektów i�
 ## Licencja  
 © 2025 Coretex / InnovatiffPL – Wszelkie prawa zastrzeżone.  
 Projekt jest w fazie MVP i przeznaczony do celów badawczo‑rozwojowych oraz walidacyjnych. Wykorzystanie komercyjne wymaga pisemnej zgody właściciela IP.
+Udostępnione informacje służą wyłącznie celom edukacyjnym i koncepcyjnym; kopiowanie lub wtórne użycie elementów procesowych, logiki systemu lub integracji AI bez zgody właściciela IP jest zabronione.
