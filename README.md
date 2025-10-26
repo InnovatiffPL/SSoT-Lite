@@ -4,7 +4,7 @@ Ten dokument ma charakter poglądowy i nie zawiera szczegółów technicznych zw
 Fundamentalny System Orkiestracji (FSO) – Coretex Hub MVP  
 
 ## Opis projektu  
-SSoT‑Lite to minimalnie satysfakcjonujący produkt (MVP) opracowany w ramach projektu **Coretex Hub**, którego celem jest stworzenie skalowalnego zaplecza organizacyjnego dla firm sektora **micro‑SMB** – mikroprzedsiębiorstw i samozatrudnionych, którzy posiadają złożoność operacyjną, lecz nie mają zasobów, by zarządzać nią samodzielnie.  
+SSoT‑Lite to Proof of Concept (PoC) dla minimalnie satysfakcjonującego produktu (MVP), obecnie w fazie bootstrapowej; opracowany w ramach projektu **Coretex Hub**, którego celem jest stworzenie skalowalnego zaplecza organizacyjnego dla firm sektora **micro‑SMB** – mikroprzedsiębiorstw i samozatrudnionych, którzy posiadają złożoność operacyjną, lecz nie mają zasobów, by zarządzać nią samodzielnie.  
 
 Startup (Coretex) pełni rolę operatora i partnera technologicznego, który przejmuje na siebie zarządzanie procesami tych firm poprzez autorskie rozwiązania i kapitał intelektualny (Coretex IP). Sieć ekspertów jest wartością komplementarną i uruchamiana jest tylko wtedy, gdy projekt wymaga specjalistycznej wiedzy lub ponadprzeciętnej złożoności.  
 
