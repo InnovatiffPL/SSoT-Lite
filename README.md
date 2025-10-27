@@ -4,6 +4,7 @@ Ten dokument ma charakter poglądowy i nie zawiera szczegółów technicznych zw
 Fundamentalny System Orkiestracji (FSO) – Coretex Hub MVP  
 
 ## Opis projektu  
+
 SSoT‑Lite to Proof of Concept (PoC) dla minimalnie satysfakcjonującego produktu (MVP), obecnie w fazie bootstrapowej; opracowany w ramach projektu **Coretex Hub**, którego celem jest stworzenie skalowalnego zaplecza organizacyjnego dla firm sektora **micro‑SMB** – mikroprzedsiębiorstw i samozatrudnionych, którzy posiadają złożoność operacyjną, lecz nie mają zasobów, by zarządzać nią samodzielnie.  
 
 Startup (Coretex) pełni rolę operatora i partnera technologicznego, który przejmuje na siebie zarządzanie procesami tych firm poprzez autorskie rozwiązania i kapitał intelektualny (Coretex IP). Sieć ekspertów jest wartością komplementarną i uruchamiana jest tylko wtedy, gdy projekt wymaga specjalistycznej wiedzy lub ponadprzeciętnej złożoności.  
@@ -38,36 +39,46 @@ SSoT‑Lite opiera się na połączonym ekosystemie narzędzi i agen
 
 > Eksperci otrzymują informację o projekcie –  ten, który pierwszy  zaakceptuje zlecenie, otrzymuje dostęp do pełnej specyfikacji i  briefingu w Jira,  a dopiero po  potwierdzeniu  gotowości  uruchamiany  jest projekt produkcyjny.  
 
->Jeden z agentów AI cyklicznie eksportuje metadane z Jira (do CSV/XML), co zapewnia chronologię i nieprzerwaną integrację danych. Po każdym eksporcie plik jest zewnętrznie archiwizowany w bezpiecznej
-chmurze, a także dodawany do portfolio klienta – które bazuje na tych samych metadanych z Jira i pełni funkcję trwałego rekordu projektowego. Takie działanie dodatkowo umacnia integralność informacji i ciąg procesowy.  
+>Jeden z agentów AI cyklicznie eksportuje metadane z Jira (do CSV/XML), co zapewnia chronologię i nieprzerwaną integrację danych. Po każdym eksporcie plik jest zewnętrznie archiwizowany w bezpiecznej chmurze, a także dodawany do portfolio klienta, które bazuje na tych samych metadanych z Jira i pełni funkcję trwałego rekordu projektowego. Takie działanie dodatkowo umacnia integralność informacji i ciąg procesowy.  
 
 ***
 
-## System agentów AI  
+## System agentów AI
+
 Każdy etap przepływu danych jest zarządzany przez sieć agentów AI działających we współpracy. Każdy agent ma ściśle zdefiniowaną rolę (logikę na podstawie plików z Obsidiana), a ich komunikacja oparta jest na architekturze RAG (Retrieval Augmented Generation), aby zapobiec kaskadowym błędom decyzyjnym.  
 
 Nadrzędny agent AI nieustannie monitoruje spójność danych we wszystkich warstwach. Każda niespójność powoduje automatyczne wstrzymanie danego agenta i utworzenie raportu diagnostycznego, z dokładnym wskazaniem punktu i powodu błędu. Dzięki temu debugowanie i naprawa procesów odbywa się natychmiast – co eliminuje ryzyko rozchodzenia się niepoprawnych stanów w SSoT.  
 
 ***
 
-## Kluczowe funkcjonalności  
-- Jedno źródło prawdy dla całego cyklu projektowego (SSoT).  
-- Dopasowywanie ekspertów przez walidowany model AI.  
-- Ciągły eksport i archiwizacja metadanych Jira w chmurze i portfolio klienta.  
-- Repozytorium umów i dokumentów projektowych w Trello (z walidacją do CRM i Jira).  
-- Weryfikacja danych na każdym etapie przez agentów AI z autokontrolą bieżących stanów.  
-- Mechanizmy RAG zapobiegające powstawaniu błędów kaskadowych.  
-- Obsidian jako repozytorium logiki systemu dla AI – wersjonowany, kontrolowany i zrozumiały dla modeli językowych.  
-- Pełny pomiar TS‑ROI (Time Savings ROI).  
+## Kluczowe funkcjonalności
+
+> Jedno źródło prawdy dla całego cyklu projektowego (SSoT).
+
+> Dopasowywanie ekspertów przez walidowany model AI.
+
+> Ciągły eksport i archiwizacja metadanych Jira w chmurze i portfolio klienta.
+
+> Repozytorium umów i dokumentów projektowych w Trello (z walidacją do CRM i Jira).
+ 
+> Weryfikacja danych na każdym etapie przez agentów AI z autokontrolą bieżących stanów.
+
+> Mechanizmy RAG zapobiegające powstawaniu błędów kaskadowych.
+
+> Obsidian jako repozytorium logiki systemu dla AI – wersjonowany, kontrolowany i zrozumiały dla modeli językowych.
+
+> Pełny pomiar TS‑ROI (Time Savings ROI).
 
 ***
 
-## Skalowalność i adaptacyjność  
+## Skalowalność i adaptacyjność
+
 System jest skalowalny pionowo (zwiększanie liczby projektów i procesów operacyjnych) oraz adaptacyjny technicznie. Jego modularna architektura umożliwia łatwą migrację do bardziej zaawansowanych środowisk (np. Airtable, Notion, Make, n8n) lub rozszerzenie w pełnoprawną platformę iPaaS. Każda zmiana w systemie jest deterministycznie aktualizowana w całym cyklu danych, bez naruszania spójności lub historycznych rekordów.  
 
 ***
 
-## Licencja  
+## Licencja
+
 © 2025 Coretex / InnovatiffPL – Wszelkie prawa zastrzeżone.  
 Projekt jest w fazie MVP i przeznaczony do celów badawczo‑rozwojowych oraz walidacyjnych. Wykorzystanie komercyjne wymaga pisemnej zgody właściciela IP.
 Udostępnione informacje służą wyłącznie celom edukacyjnym i koncepcyjnym; kopiowanie lub wtórne użycie elementów procesowych, logiki systemu lub integracji AI bez zgody właściciela IP jest zabronione.
