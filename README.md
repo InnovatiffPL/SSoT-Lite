@@ -37,7 +37,7 @@ SSoT‑Lite opiera się na połączonym ekosystemie narzędzi i agen
 
 > Proces credentialingu odbywa się po stronie ekspertów - jest to etap weryfikacji i  zbierania dokumentów, które  potwierdzają ich kwalifikacje  do konkretnego projektu. Na tym etapie agenci AI oceniają zgodność danych i zestawiają kompletność dokumentacji.  
 
-> Eksperci otrzymują informację o projekcie –  ten, który pierwszy  zaakceptuje zlecenie, otrzymuje dostęp do pełnej specyfikacji i  briefingu w Jira,  a dopiero po  potwierdzeniu  gotowości  uruchamiany  jest projekt produkcyjny.  
+> Eksperci otrzymują informację o projekcie - ten, który pierwszy zaakceptuje zlecenie, otrzymuje dostęp do pełnej specyfikacji i briefingu w Jira, a dopiero po potwierdzeniu gotowości uruchamiany jest projekt produkcyjny.  
 
 >Jeden z agentów AI cyklicznie eksportuje metadane z Jira (do CSV/XML), co zapewnia chronologię i nieprzerwaną integrację danych. Po każdym eksporcie plik jest zewnętrznie archiwizowany w bezpiecznej chmurze, a także dodawany do portfolio klienta, które bazuje na tych samych metadanych z Jira i pełni funkcję trwałego rekordu projektowego. Takie działanie dodatkowo umacnia integralność informacji i ciąg procesowy.  
 
@@ -47,7 +47,7 @@ SSoT‑Lite opiera się na połączonym ekosystemie narzędzi i agen
 
 Każdy etap przepływu danych jest zarządzany przez sieć agentów AI działających we współpracy. Każdy agent ma ściśle zdefiniowaną rolę (logikę na podstawie plików z Obsidiana), a ich komunikacja oparta jest na architekturze RAG (Retrieval Augmented Generation), aby zapobiec kaskadowym błędom decyzyjnym.  
 
-Nadrzędny agent AI nieustannie monitoruje spójność danych we wszystkich warstwach. Każda niespójność powoduje automatyczne wstrzymanie danego agenta i utworzenie raportu diagnostycznego, z dokładnym wskazaniem punktu i powodu błędu. Dzięki temu debugowanie i naprawa procesów odbywa się natychmiast – co eliminuje ryzyko rozchodzenia się niepoprawnych stanów w SSoT.  
+Nadrzędny agent AI nieustannie monitoruje spójność danych we wszystkich warstwach. Każda niespójność powoduje automatyczne wstrzymanie danego agenta i utworzenie raportu diagnostycznego, z dokładnym wskazaniem punktu i powodu błędu. Dzięki temu debugowanie i naprawa procesów odbywa się natychmiast, co eliminuje ryzyko rozchodzenia się niepoprawnych stanów w SSoT.  
 
 ***
 
@@ -65,7 +65,7 @@ Nadrzędny agent AI nieustannie monitoruje spójność danych we w
 
 > Mechanizmy RAG zapobiegające powstawaniu błędów kaskadowych.
 
-> Obsidian jako repozytorium logiki systemu dla AI – wersjonowany, kontrolowany i zrozumiały dla modeli językowych.
+> Obsidian jako repozytorium logiki systemu dla AI - wersjonowany, kontrolowany i zrozumiały dla modeli językowych.
 
 > Pełny pomiar TS‑ROI (Time Savings ROI).
 
@@ -79,6 +79,6 @@ System jest skalowalny pionowo (zwiększanie liczby projektów i�
 
 ## Licencja
 
-© 2025 Coretex / InnovatiffPL – Wszelkie prawa zastrzeżone.  
+© 2025 Coretex / InnovatiffPL - Wszelkie prawa zastrzeżone.  
 Projekt jest w fazie MVP i przeznaczony do celów badawczo‑rozwojowych oraz walidacyjnych. Wykorzystanie komercyjne wymaga pisemnej zgody właściciela IP.
 Udostępnione informacje służą wyłącznie celom edukacyjnym i koncepcyjnym; kopiowanie lub wtórne użycie elementów procesowych, logiki systemu lub integracji AI bez zgody właściciela IP jest zabronione.
