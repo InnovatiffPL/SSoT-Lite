@@ -1,7 +1,7 @@
 Ten dokument ma charakter poglądowy i nie zawiera szczegółów technicznych związanych z Coretex IP, agentami AI ani kodem źródłowym platformy.
 
 # SSoT‑Lite  
-Fundamentalny System Orkiestracji (FSO) – Coretex Hub MVP  
+Fundamentalny System Orkiestracji (FSO) - Coretex Hub MVP  
 
 ## Opis projektu  
 
