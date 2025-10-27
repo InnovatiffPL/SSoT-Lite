@@ -5,35 +5,37 @@ SSoT-Lite is a proof-of-concept (PoC) MVP, currently in the bootstrap phase, dev
 
 Coretex acts as both operator and technology partner, handling processes for client companies through proprietary solutions and intellectual capital (Coretex IP). An expert network can be engaged on-demand for projects requiring specialized knowledge or advanced complexity.
 
-The project is built on a Single Source of Truth (SSoT) architecture – one consistent truth across all processes, tools, and business decisions. This architecture eliminates inter-layer data errors, synchronizes everything in real-time, and maintains a full process chronology.
+The project is built on a Single Source of Truth (SSoT) architecture - one consistent truth across all processes, tools, and business decisions. This architecture eliminates inter-layer data errors, synchronizes everything in real-time, and maintains a full process chronology.
 
 ***
 
 ## Key Components
-Google Forms – Used for collecting consultation data from clients.
 
-Google Sheets – Aggregate and synchronize operational data across system layers.
+> Google Forms - Used for collecting consultation data from clients.
 
-HubSpot CRM – Master Record; authoritative register for clients, projects, experts.
+> Google Sheets - Aggregate and synchronize operational data across system layers.
 
-Jira – Logic engine and task execution; contains performance metrics (TS-ROI).
+> HubSpot CRM - Master Record; authoritative register for clients, projects, experts.
 
-Trello – Coretex team management and project documentation (exclusive to staff).
+> Jira - Logic engine and task execution; contains performance metrics (TS-ROI).
 
-Obsidian – Stores versioned business logic (Coretex IP), readable for AI agents and used for operations validation, access by single trusted maintainer.
+> Trello - Coretex team management and project documentation (exclusive to staff).
+
+> Obsidian - Stores versioned business logic (Coretex IP), readable for AI agents and used for operations validation, access by single trusted maintainer.
 
 ***
 
 ## How It Works
-Consultation data flows from Google Forms to CRM, where an AI model analyses project details and matches experts using profile data.
 
-The model is continuously trained and validated for skills performance and alignment.
+> Consultation data flows from Google Forms to CRM, where an AI model analyses project details and matches experts using profile data.
 
-Expert credentialing involves verification and documentation collection. AI agents validate completeness and consistency.
+> The model is continuously trained and validated for skills performance and alignment.
 
-The first expert who accepts a project gets a full Jira brief; production launches after readiness confirmation.
+> Expert credentialing involves verification and documentation collection. AI agents validate completeness and consistency.
 
-One AI agent routinely exports Jira metadata (to CSV/XML) for auditing, historical integrity, and cloud archiving. This data adds to the client's portfolio for transparent, traceable project records.
+> The first expert who accepts a project gets a full Jira brief; production launches after readiness confirmation.
+
+> One AI agent routinely exports Jira metadata (to CSV/XML) for auditing, historical integrity, and cloud archiving. This data adds to the client's portfolio for transparent, traceable project records.
 
 ***
 
@@ -45,21 +47,22 @@ A supervising AI agent actively monitors data consistency across layers. Any iss
 ***
 
 ## Core Features
-Single source of truth across the entire project lifecycle.
 
-Skill matching and validation using AI models.
+> Single source of truth across the entire project lifecycle.
 
-Continuous export and archiving of Jira metadata in the client’s portfolio/cloud.
+> Skill matching and validation using AI models.
 
-Validation of project documents in Trello referencing CRM and Jira.
+> Continuous export and archiving of Jira metadata in the client’s portfolio/cloud.
 
-Ongoing data verification by AI agents, with built-in state self-checking.
+> Validation of project documents in Trello referencing CRM and Jira.
 
-RAG-based mechanisms to prevent cascading errors or information leaks.
+> Ongoing data verification by AI agents, with built-in state self-checking.
 
-Obsidian-based, controlled versioning of business logic for LLM-readability and validation.
+> RAG-based mechanisms to prevent cascading errors or information leaks.
 
-Full support for TS-ROI (Time Savings ROI) calculation.
+> Obsidian-based, controlled versioning of business logic for LLM-readability and validation.
+
+> Full support for TS-ROI (Time Savings ROI) calculation.
 
 ***
 
