@@ -8,19 +8,25 @@ SSoT‑Lite to Proof of Concept (PoC) dla minimalnie satysfakcjonującego produk
 
 Startup (Coretex) pełni rolę operatora i partnera technologicznego, który przejmuje na siebie zarządzanie procesami tych firm poprzez autorskie rozwiązania i kapitał intelektualny (Coretex IP). Sieć ekspertów jest wartością komplementarną i uruchamiana jest tylko wtedy, gdy projekt wymaga specjalistycznej wiedzy lub ponadprzeciętnej złożoności.  
 
-Architektura projektu bazuje na zasadzie **Single Source of Truth (SSoT)** – jednego, spójnego źródła prawdy dla wszystkich procesów, narzędzi i decyzji biznesowych. System eliminuje ryzyko błędów międzywarstwowych, synchronizując dane w czasie rzeczywistym i zachowując pełną chronologię procesów.  
+Architektura projektu bazuje na zasadzie **Single Source of Truth (SSoT)** - jednego, spójnego źródła prawdy dla wszystkich procesów, narzędzi i decyzji biznesowych. System eliminuje ryzyko błędów międzywarstwowych, synchronizując dane w czasie rzeczywistym i zachowując pełną chronologię procesów.  
 
 ***
 
 ## Główne założenia  
+
 SSoT‑Lite opiera się na połączonym ekosystemie narzędzi i agentów AI zarządzających danymi w sposób deterministyczny i kontrolowany:  
 
-- Formularze Google – służą do zbierania danych ze spotkań konsultacyjnych z klientem.  
-- Arkusze Google – agregują i synchronizują dane operacyjne między warstwami.  
-- HubSpot CRM – pełni funkcję autorytatywnego rejestru (Master Record). Zawiera rejestry klientów, projektów i ekspertów.  
-- Jira – stanowi silnik logiki i realizacji zadań. To tutaj odbywa się pomiar wydajności i TS‑ROI (Time Savings Return on Investment).  
-- Trello – jest centrum zarządzania zespołu Coretex (startupu). To repozytorium dokumentacji, w tym umów z klientami i ekspertami dla konkretnego projektu. Każdy projekt posiada własną kartę, która jest walidowana z poziomu Trello w Jira i CRM. Eksperci nie mają tu dostępu.  
-- Obsidian – to repozytorium logiki biznesowej (Coretex IP). Zawiera wersjonowaną strukturę procesową, z instrukcjami zapisanymi w języku znaczników (markup language), czytelną dla agentów AI i wykorzystywaną do walidacji operacji. Dostęp posiada jedna osoba – co chroni przed nadpisaniem lub manipulacją treścią.  
+> Formularze Google - służą do zbierania danych ze spotkań konsultacyjnych z klientem.
+
+> Arkusze Google - agregują i synchronizują dane operacyjne między warstwami.
+
+> HubSpot CRM - pełni funkcję autorytatywnego rejestru (Master Record). Zawiera rejestry klientów, projektów i ekspertów.
+
+> Jira - stanowi silnik logiki i realizacji zadań. To tutaj odbywa się pomiar wydajności i TS‑ROI (Time Savings Return on Investment).  
+
+> Trello - jest  centrum zarządzania zespołu Coretex (startupu). To repozytorium dokumentacji, w tym umów z klientami i ekspertami dla konkretnego  projektu. Każdy projekt posiada  własną kartę, która  jest walidowana z poziomu Trello w Jira i CRM. Eksperci nie mają tu dostępu.
+
+> Obsidian - to  repozytorium logiki biznesowej (Coretex IP).  Zawiera wersjonowaną strukturę procesową, z instrukcjami zapisanymi  w języku znaczników (markup language),  czytelną  dla agentów  AI  i wykorzystywaną do walidacji operacji. Dostęp posiada jedna osoba – co chroni przed nadpisaniem lub manipulacją treścią.  
 
 ***
 
