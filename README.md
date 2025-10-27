@@ -22,22 +22,24 @@ SSoT‑Lite opiera się na połączonym ekosystemie narzędzi i agen
 
 > HubSpot CRM - pełni funkcję autorytatywnego rejestru (Master Record). Zawiera rejestry klientów, projektów i ekspertów.
 
-> Jira - stanowi silnik logiki i realizacji zadań. To tutaj odbywa się pomiar wydajności i TS‑ROI (Time Savings Return on Investment).  
+> Jira - stanowi silnik logiki i realizacji zadań. To tutaj odbywa się pomiar wydajności i TS‑ROI (Time Savings Return on Investment).
 
 > Trello - jest  centrum zarządzania zespołu Coretex (startupu). To repozytorium dokumentacji, w tym umów z klientami i ekspertami dla konkretnego  projektu. Każdy projekt posiada  własną kartę, która  jest walidowana z poziomu Trello w Jira i CRM. Eksperci nie mają tu dostępu.
 
-> Obsidian - to  repozytorium logiki biznesowej (Coretex IP).  Zawiera wersjonowaną strukturę procesową, z instrukcjami zapisanymi  w języku znaczników (markup language),  czytelną  dla agentów  AI  i wykorzystywaną do walidacji operacji. Dostęp posiada jedna osoba – co chroni przed nadpisaniem lub manipulacją treścią.  
+> Obsidian - to  repozytorium logiki biznesowej (Coretex IP).  Zawiera wersjonowaną strukturę procesową, z instrukcjami zapisanymi  w języku znaczników (markup language),  czytelną  dla agentów  AI  i wykorzystywaną do walidacji operacji. Dostęp posiada jedna osoba – co chroni przed nadpisaniem lub manipulacją treścią.
 
 ***
 
 ## Jak to działa  
-Po wypełnieniu formularza konsultacyjnego dane trafiają automatycznie do CRM, gdzie model AI analizuje specyfikę projektu i dopasowuje ekspertów na podstawie danych profilowych. Model jest nieustannie trenowany i walidowany pod kątem dopasowań kompetencyjnych oraz wydajności.  
 
-Proces credentialingu odbywa się po stronie ekspertów – jest to etap weryfikacji i zbierania dokumentów, które potwierdzają ich kwalifikacje do konkretnego projektu. Na tym etapie agenci AI oceniają zgodność danych i zestawiają kompletność dokumentacji.  
+>Po wypełnieniu formularza konsultacyjnego dane trafiają automatycznie do CRM, gdzie model AI analizuje specyfikę projektu i dopasowuje ekspertów na podstawie danych profilowych. Model jest nieustannie trenowany i walidowany pod kątem dopasowań kompetencyjnych oraz wydajności.
 
-Eksperci otrzymują informację o projekcie – ten, który pierwszy zaakceptuje zlecenie, otrzymuje dostęp do pełnej specyfikacji i briefingu w Jira, a dopiero po potwierdzeniu gotowości uruchamiany jest projekt produkcyjny.  
+> Proces credentialingu odbywa się po stronie ekspertów - jest to etap weryfikacji i  zbierania dokumentów, które  potwierdzają ich kwalifikacje  do konkretnego projektu. Na tym etapie agenci AI oceniają zgodność danych i zestawiają kompletność dokumentacji.  
 
-Jeden z agentów AI cyklicznie eksportuje metadane z Jira (do CSV/XML), co zapewnia chronologię i nieprzerwaną integrację danych. Po każdym eksporcie plik jest zewnętrznie archiwizowany w bezpiecznej chmurze, a także dodawany do portfolio klienta – które bazuje na tych samych metadanych z Jira i pełni funkcję trwałego rekordu projektowego. Takie działanie dodatkowo umacnia integralność informacji i ciąg procesowy.  
+> Eksperci otrzymują informację o projekcie –  ten, który pierwszy  zaakceptuje zlecenie, otrzymuje dostęp do pełnej specyfikacji i  briefingu w Jira,  a dopiero po  potwierdzeniu  gotowości  uruchamiany  jest projekt produkcyjny.  
+
+>Jeden z agentów AI cyklicznie eksportuje metadane z Jira (do CSV/XML), co zapewnia chronologię i nieprzerwaną integrację danych. Po każdym eksporcie plik jest zewnętrznie archiwizowany w bezpiecznej
+chmurze, a także dodawany do portfolio klienta – które bazuje na tych samych metadanych z Jira i pełni funkcję trwałego rekordu projektowego. Takie działanie dodatkowo umacnia integralność informacji i ciąg procesowy.  
 
 ***
 
